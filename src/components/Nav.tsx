@@ -9,6 +9,8 @@ const Nav = () => {
         <li><Link to="/experience">Experience</Link></li>
         <li><Link to="/certifications">Certifications</Link></li>
         <li><Link to="/achievements">Achievements</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/references">References</Link></li>
       </ul>
     </nav>
   );

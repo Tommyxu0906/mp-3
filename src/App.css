@@ -1,42 +1,130 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+    background: #283593;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.card {
-  padding: 2em;
+nav ul li {
+    margin: 15px 0;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #1a237e;
+}
+
+header {
+    background: #3f51b5;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 26px;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+main {
+    flex-grow: 1; 
+    margin-left: 250px;
+    padding: 20px;
+    background: white;
+    min-height: 100vh;
+    width: calc(100% - 250px);
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3f51b5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    color: #283593;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #3f51b5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
 }
